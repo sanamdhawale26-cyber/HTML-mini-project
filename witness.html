@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form></title>
+</head>
+
+<body>
+
+    <h1>Student Registratin Form</h1>
+
+    <p>Please provide the information
+    about what you observed.</p>
+
+    <form>
+
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <label for="name">Name:</label>
+            <input type="text">
+
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email">
+
+            <br><br>
+
+            <label for="date">Date:</label>
+            <input type="date">
+
+            <br><br>
+
+            <label for="time">Time:</label>
+            <input type="time">
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Location</legend>
+
+            <input type="radio">
+            <label>Inside Gallery</label>
+
+            <input type="radio" name="place">
+            <label>Outside Gallery</label>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>What did you notice?</legend>
+
+            <input type="checkbox">
+            <label>Clothing</label>
+
+            <input type="checkbox">
+            <label>Vehicle</label>
+
+            <input type="checkbox">
+            <label>Object</label>
+
+        </fieldset>
+
+        <br>
+
+        <label>Type of Observation:</label>
+
+        <select name="observation">
+            <option>Person</option>
+            <option>Vehicle</option>
+            <option>Sound</option>
+            <option>Other</option>
+        </select>
+
+        <br><br>
+
+        <label>Write Your Statement:</label>
+
+        <textarea name="statement"
+        rows="4" cols="30"
+        maxlength="500"></textarea>
+
+        <br><br>
+
+        <label>Upload Evidence:</label>
+        <input type="file" accept=".pdf,.jpg,.png">
+
+        <br><br>
+
+        <label>Confidence Level:</label>
+        <input type="range" min="1" max="10">
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+    <br>
+
+    <a href="index.html">Home</a> |
+    <a href="evidence.html">Evidence</a>
+
+</body>
+</html>
